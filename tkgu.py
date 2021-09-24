@@ -24,7 +24,7 @@ button_command = lambda:[primeout.delete(0.0, END),\
     primeout.insert(0.0,click(numberentry.get(),numberentrytwo.get())),\
     numberentry.delete(0, END),\
     numberentrytwo.delete(0,END)] # single zero since it has 1 line of text
-Button(window, text='Calculate', bg='white', fg='black', activebackground='green', \
+Button(window, text='Calculate', highlightbackground='white', fg='black', activebackground='green', \
     width=9, command=button_command, font='arial 12').grid(row=3, column=1)
 
 window.resizable(0,0)
